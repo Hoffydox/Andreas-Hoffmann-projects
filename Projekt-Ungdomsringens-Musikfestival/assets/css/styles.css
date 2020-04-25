@@ -1,0 +1,702 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#spinner {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 700px;
+}
+
+.active {
+    display: block !important;
+}
+
+span {
+    color: #B73D3D;
+}
+
+/* Styling for navigation bar for all sites*/
+
+ul {
+    margin: 0;
+    padding: 2vh 1vw;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    height: 8vh;
+}
+
+li a {
+    color: #EA5634;
+    display: block;
+    text-align: center;
+    padding: 2vh 0.5vw;
+    margin-left: 8vw;
+    text-decoration: none;
+    font-size: 1.7vw;
+    background-color: #1A1A1A;
+    width: 9vw;
+    border-radius: 30px;
+}
+
+li a i {
+    margin-right: 3.5vw;
+}
+
+.currentsite {
+    color: #13849E;
+}
+
+#logo {
+    width: 4vw;
+    height: 8vh;
+}
+
+/* Styling for Facebook and Instagram and Arrow icons */
+
+i {
+    color: #EA5634;
+}
+
+/* Styling for top part of the main part of the landing page */
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+/* unikt ID for hver main på de forskellige html sider */
+
+main, #index-main {
+    background: url(images/landing.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main, #program-main {
+    background: url(images/programbackground.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main, #info-main {
+    background: url(images/infobackground.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#topmain {
+    color: white;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 18vh;
+}
+
+#icondown {
+    margin-top: 5vh;
+}
+
+/* Program section */
+
+#program-main #program-section {
+    color: white;
+    width: 100%;
+    font-size: 3vw;
+    margin-top: 8vh;
+}
+
+#program-main #program-section .program-flex {
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+}
+
+#program-main #program-section .program-flex>.flex-box { /* > er den okay?*/
+    background-color: rgb(37, 37, 37);
+    margin: 0 0 0 5vw;
+    font-size: 30px;
+    border: 1px solid #B73D3D;
+}
+
+#program-main #program-section .program-flex .flex-box .filter {
+    height: 65vh;
+    width: 30vw;
+}
+#program-main #program-section .program-flex .flex-box .program-text {
+   font-size: 1rem;
+}
+
+#program-main #program-section .program-flex .flex-box .program-text h4 {
+    margin: 1.5vh 0 0 0;
+
+ }
+
+#program-main #program-section .program-flex .flex-box .program-text p {
+    margin: 0 1.5vw 1.5vw 1.5vw;
+
+ }
+
+
+#program-main #program-section .program-flex .flex-box .table {
+    width: 55vw;
+}
+
+.table {
+    background-color: #d9cec8;
+    height: 65vh;
+}
+
+table {
+    width: 100%;
+    color: black;
+    font-size: 1vw;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 0.5vw;
+  }  
+
+  .programfooter {
+      margin-top: 5vh;
+  }
+
+  #saturday {
+      margin-top: 5vh;
+  }
+
+  .hiddenimg {
+      display: none;
+  }
+
+/* Styling for buttons */
+
+button {
+    width: 12vw;
+    padding: 2vh;
+    font-size: 2vw;
+    border: 2px solid #B73D3D;
+    background-color: black;
+    color: #B73D3D;
+}
+
+#landingbutton {
+    margin-left: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: #B73D3D;
+}
+
+/* Styling for about us section on the landing page */
+
+#aboutus {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 80vh;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 2vw;
+}
+
+#aboutus p {
+    line-height: 1.5;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 1.2vw;
+}
+
+.aboutleft {
+    grid-area: left;
+}
+
+.aboutright {
+    grid-area: right;
+}
+
+#JScontent {
+    display: grid;
+    grid-template-areas: 'left right';
+}
+
+/*Styling for Gallery and Subscribe section on the landing page */
+
+/* Gallery flex grid start */
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery {
+    background-color: #B73D3D;
+    padding-bottom: 2vh;
+}
+
+#gallery h3 {
+    color: black;
+    margin-bottom: 5vh;
+}
+
+.gallery-img-box {
+    background-color: #f1f1f1;
+    width: 270px;
+    height: 270px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.gallery-img-box img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    max-width: 270px;
+    max-height: 270px;
+}
+
+/* Gallery flex grid slut */
+
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 3vw;
+    color: #B73D3D;
+}
+
+.infobox {
+    width: 25vw;
+    height: 55vh;
+    padding: 2vh;
+    border: 2px solid #B73D3D;
+    background-color: black;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2vw;
+    color: #B73D3D;
+}
+
+article {
+    color: white;
+    margin-top: 2vh;
+    line-height: 1.5;
+}
+
+.leftsection {
+    grid-area: leftsect;
+    margin-left: 10vw;
+}
+
+.rightsection {
+    grid-area: rightsect;
+    margin-left: 15vw;
+}
+
+.tilmelding-container {
+    display: grid;
+    grid-template-areas: 'leftsect rightsect';
+    margin-top: 10vh;
+}
+
+.subbtn {
+    position: relative;
+    bottom: 45vh;
+    left: 43.8vw;
+}
+
+.infobtn {
+    position: relative;
+    bottom: 25vh;
+    left: 31.5vw;
+}
+
+.partnersimg {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-bottom: 10vh;
+}
+
+/* Styling for the footer for all sites */
+
+footer {
+    background-color: black;
+    color: #B73D3D;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+}
+
+footer>p {
+    display: inline-block;
+    padding-left: 11vw;
+}
+
+footer>.footericons {
+    display: inline-block;
+    padding-left: 11vw;
+}
+
+.footericons>i {
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+footer section, p, i {
+    margin-left: 3.5vw;
+}
+
+/*Styling for the content on information page */
+
+.informationarticle {
+    width: 25vw;
+    height: 37vh;
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    padding: 0;
+    border: 1px solid #B73D3D;
+}
+
+.scrollbar {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.informationarticle article {
+    margin: 0;
+    padding: 0.5vw;
+    color: white;
+}
+
+.informationarticle p {
+    font-size: 0.8vw;
+    margin: 0;
+}
+
+.infocontainer img {
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    height: 25vh;
+}
+
+.left {
+    grid-area: left;
+}
+
+.mid {
+    grid-area: mid;
+}
+
+.right {
+    grid-area: right;
+}
+
+.infocontainer {
+    display: grid;
+    grid-template-areas: 'left left left mid mid mid right right right';
+    margin-left: 7vw;
+    margin-top: 2vh;
+}
+
+.infobutton {
+    margin-left: 44vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+/*Styling for the content on subscriptment page */
+
+.subfomular {
+    margin: 0;
+    width: 25vw;
+    height: 73vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster {
+    display: inline-block;
+    padding-left: 10vw;
+}
+
+.poster img {
+    height: 73vh;
+}
+
+.subcontent {
+    display: flex;
+    margin-left: 20.5vw;
+    margin-bottom: 2.3vh;
+    margin-top: 2vh;
+}
+
+input {
+    width: 15vw;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+}
+
+label {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.subcontent h2 {
+    padding-top: 2vh;
+    font-size: 1.5vw;
+}
+
+.subcontent button {
+    margin-left: 6.7vw;
+}
+
+/* Here starts the styling for mobile version of the website */
+
+@media only screen and (max-width: 768px) {
+    /* Mainly coded for Iphone 6/7/8 */
+
+    /* Styling for the loading spinner */
+
+    #spinner {
+        height: 300px;
+    }
+
+    /* Styling for navigation bar*/
+    ul {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+    li a {
+        background-color: black;
+        border-radius: 0;
+        font-size: 5vw;
+        padding: 2vh 0 0 0;
+        margin: 0;
+        width: 28vw;
+    }
+    #logo {
+        width: 13vw;
+    }
+    .hidden {
+        display: none;
+    }
+    /* Styling for footer */
+    footer {
+        font-size: 4vw;
+    }
+    
+    .footericons {
+        padding: 0;
+        position: relative;
+        right: 15vw;
+    }
+
+    footer p {
+        padding: 0;
+        position: relative;
+        right: 17vw;
+    }
+    /* Styling for Landing page */
+    /* Top main */
+    #topmain h1 {
+        font-size: 8vw;
+    }
+    #topmain p {
+        font-size: 6vw;
+    }
+    #topmain button {
+        width: 30vw;
+        height: 10vh;
+        font-size: 5vw;
+        font-weight: bold;
+        padding: 0;
+        margin-left: 1.5vw;
+    }
+    #icondown {
+        font-size: 6vw;
+        margin-left: 6.5vw;
+    }
+    /* About us */
+    #aboutus h2 {
+        font-size: 6vw;
+        padding: 5vh 0 0 0;
+        line-height: 1.5;
+    }
+
+    #aboutus {
+        height: 30vh;
+    }
+    
+    /* Gallery and subscribe */
+    #galleryandsubscribe h3 {
+        font-size: 9vw;
+    }
+    .tilmelding-container {
+        display: unset;
+    }
+    .infobox {
+        width: 80vw;
+        height: 60vh;
+        margin: 5vh 0 0 5vw;
+    }
+    .infobox h4 {
+        font-size: 6vw;
+    }
+    .subbtn, .infobtn {
+        position: inherit;
+        width: 40vw;
+        height: 15vh;
+        margin: 5vh 0 0 5vw;
+        font-size: 7vw;
+    }
+    .partnersimg {
+        width: 100vw;
+        margin: 5vh 0 5vh 0;
+    }
+    /* Styling for Information page */
+    .infocontainer {
+        display: unset;
+    }
+    .left, .mid, .right {
+        width: 100vw;
+        height: 100%;
+    }
+    .mid {
+        display: table;
+    }
+    .mid .informationarticle {
+        display: table-footer-group;
+    }
+    .mid img {
+        display: table-header-group;
+    }
+    .infocontainer img {
+        width: 100%;
+        height: 100%;
+    }
+    .informationarticle {
+        width: 100vw;
+        height: 100%;
+        background: black;
+        border: none;
+    }
+    .informationarticle p {
+        color: white;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+    .informationarticle h1 {
+        color: white;
+        padding: 2vw;
+        font-size: 6vw;
+    }
+    #info-main {
+        background: none;
+    }
+    .info-gen {
+        background: black;
+    }
+    /* Styling for Program page */
+    
+    .hiddenimg {
+        display: unset;
+        width: 100vw;
+        margin: 5vh 0 0 0;
+    }
+
+    .programhtml {
+        background-color: black;
+    }
+
+    .programfooter {
+        margin: 0;
+    }
+    
+    #program-main #program-section .program-flex {
+        height: 0;
+    }
+
+    /* Styling for Subscribe page */
+    .subcontent {
+        display: table;
+        margin: 0;
+    }
+    .subfomular {
+        display: table-header-group;
+    }
+    .poster {
+        display: table-footer-group;
+    }
+    .poster img {
+        width: 100vw;
+    }
+    input {
+        width: 90vw;
+        margin: 2vh 0 2vh 4vw;
+    }
+    label {
+        margin-left: 4vw;
+    }
+    .subcontent h2 {
+        padding-top: 2vh;
+        font-size: 7vw;
+    }
+    .subcontent button {
+        width: 40vw;
+        font-size: 5vw;
+        margin: 0 0 2vh 30vw;
+    }
+}
