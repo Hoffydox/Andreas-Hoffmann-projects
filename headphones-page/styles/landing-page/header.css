@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* COLORS
+
+Blå--- 			 #6066F2
+mørkeblå---	 	 #4945BF
+orange---		 #F2913D
+lilla---		 #DE8AD7
+lys lila---  	 #E6CDF9
+*/
+
+
+header {
+	padding: 30px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 50px;
+	
+}
+
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header a {
+	color: #4945BF;
+	text-decoration: none;
+}
+
+header .logo {
+	display: inline-block;
+	float: left;
+	margin-right: 50px;
+}
+
+header .logo img {
+	width: 40px;
+	
+	
+}
+
+header .menu {
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 14px;
+}
+
+header .menu a {
+	text-transform: uppercase;
+	
+}
+
+
+header .header-buttons {
+	display: inline-block;
+	float: right;
+	
+}
+
+header .header-buttons .blue-btn {
+	background: #6066F2;
+	padding: 14px 40px;
+	color: white;
+	border-radius: 35px;
+	text-transform: uppercase;
+	position: relative;
+    top: 14px;
+	
+}
+ 
+header .header-buttons .blue-btn .fas {
+	margin-left: 15px;
+}
+
+header .header-buttons .orange-btn {
+	background: #F2913D;
+	padding: 14px 40px;
+	color: white;
+	border-radius: 35px;
+	text-transform: uppercase;
+	position: relative;
+    top: 14px;
+	
+}
+
+/* -- LABTOPS DEVICES -- */
+@media only screen and (max-width: 1215px) {
+
+	
+}
+
+/* -- TABLETS DEVICES -- */
+@media only screen and (max-width: 1023px) {
+	
+	header {
+    padding: 30px 0px;
+    
+}
+	
+	header .logo {
+    margin-right: 20px;
+}
+	
+	header .header-buttons .blue-btn {
+    padding: 14px 14px;
+    
+}
+	
+	header .header-buttons .orange-btn {
+    padding: 14px 14px;
+    
+}
+	
+}
+
+/* -- MOBILE DEVICES -- */
+@media only screen and (max-width: 767px) {
+	
+	header {
+    padding: 30px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+	header .logo {
+    display: inline-block;
+    float: none;
+    margin-right: 0px;
+}
+	
+	header .header-buttons {
+    display: none;
+    /* float: right; */
+    width: 100%;
+}
+	
+}

@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top-jumpo {
+	padding: 0 0 400px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 40%, #8948f2 77%, #e0a1df 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 40%,#8948f2 77%,#e0a1df 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ffffff 0%,#ffffff 40%,#8948f2 77%,#e0a1df 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#top-jumpo:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#top-jumpo .left-side {
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+
+#top-jumpo .left-side .large-number{
+	font-size: 300px;
+	font-weight: 700;
+	opacity: 0.1;
+	color: #4945BF;
+	position: relative;
+	left: -20px;
+	top: 0px;
+	z-index: 1;
+	
+}
+#top-jumpo .left-side .info-container {
+	position: relative;
+	top: -101px;
+}
+
+
+#top-jumpo .left-side .info-container h1{
+	color: #6066F2;
+	font-size: 4.5rem;
+	text-transform: capitalize;
+	margin-bottom: 1.5rem;
+	line-height: 1.1;
+	
+}
+#top-jumpo .left-side .info-container p{
+	color: #aaacaf;
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+	
+	
+}
+
+#top-jumpo .left-side .info-container .email-area {
+	background: #FFF;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 10px;
+	
+	
+	
+}
+
+#top-jumpo .left-side .info-container .email-area .far {
+	font-size: 2rem;
+	position: relative;
+	top: 7px;
+	margin-left: 15px;
+	color: #D5E2EA;
+}
+
+#top-jumpo .left-side .info-container .email-area input[type="email"] {
+	background: white;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 1rem;
+	width: 230px;
+}
+
+#top-jumpo .left-side .info-container .email-area button {
+	background: #6066F2;
+	border-radius: 50px;
+	padding: 20px 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	border: 0;
+}
+
+
+#top-jumpo .right-side {
+	width: 60%;
+	display: inline-block;
+	float: left;
+	padding: 0 40px;
+}
+
+#top-jumpo .right-side img {
+	width: 100%;
+	
+}
+
+/* -- LABTOPS DEVICES -- */
+@media only screen and (max-width: 1215px) {
+
+	#top-jumpo .left-side .info-container .email-area {
+  		width: 100%;
+		
+	}
+	
+	
+#top-jumpo .left-side .info-container h1 {
+    font-size: 3.5rem;
+}
+	
+	#top-jumpo .left-side .info-container .email-area .far {
+		position: relative;
+		top: 14px;
+		margin-left: 0px;
+		float: left;
+		width: 15%;
+		text-align: center;
+		
+	}
+	
+	#top-jumpo .left-side .info-container .email-area input[type="email"] {
+		width: 50%;
+		float: left;
+		position: relative;
+		top: 12px;
+	}
+	
+	#top-jumpo .left-side .info-container .email-area button {
+		background: #6066F2;
+		padding: 20px 0;;
+		font-size: 1rem;
+		width: 35%;
+		float: left;
+	}
+	
+}
+
+/* -- TABLETS DEVICES -- */
+@media only screen and (max-width: 1023px) {
+	
+	#top-jumpo {
+		padding: 0 0 300px;
+	}
+	
+	#top-jumpo .left-side {
+		width: 40%;
+	}
+	
+	#top-jumpo .left-side .large-number {
+		font-size: 250px;
+	}
+	
+	#top-jumpo .left-side .info-container p {
+    
+    	font-size: 1.2rem;
+    
+	}
+	
+	#top-jumpo .left-side .info-container .email-area {
+  		width: 100%;
+		
+	}
+	
+	
+#top-jumpo .left-side .info-container h1 {
+    font-size: 3.5rem;
+}
+	
+	#top-jumpo .left-side .info-container .email-area .far {
+		position: relative;
+		top: 14px;
+		margin-left: 0px;
+		float: left;
+		width: 15%;
+		text-align: center;
+		
+	}
+	
+	#top-jumpo .left-side .info-container .email-area input[type="email"] {
+		width: 50%;
+		float: left;
+		position: relative;
+		top: 12px;
+	}
+	
+	#top-jumpo .left-side .info-container .email-area button {
+		background: #6066F2;
+		padding: 20px 0;;
+		font-size: 1rem;
+		width: 35%;
+		float: left;
+	}
+	
+	#top-jumpo .right-side {
+		width: 60%;
+	}
+	
+	#top-jumpo .right-side img {
+		
+		position: relative;
+		top: 156px;
+	}
+	
+}
+
+/* -- MOBILE DEVICES -- */
+@media only screen and (max-width: 767px) {
+	
+	#top-jumpo {
+    padding: 0 0 300px;
+   
+	}
+	
+	#top-jumpo .left-side {
+		width: 100%;
+	}
+	
+	#top-jumpo .left-side .large-number {
+		font-size: 250px;
+	}
+	
+	#top-jumpo .left-side .info-container p {
+    
+    	font-size: 1.2rem;
+    
+	}
+	
+	#top-jumpo .left-side .info-container .email-area {
+  		width: 100%;
+		
+	}
+	
+	
+#top-jumpo .left-side .info-container h1 {
+    font-size: 3.5rem;
+}
+	
+	#top-jumpo .left-side .info-container .email-area .far {
+		position: relative;
+		top: 14px;
+		margin-left: 0px;
+		float: left;
+		width: 15%;
+		text-align: center;
+		
+	}
+	
+	#top-jumpo .left-side .info-container .email-area input[type="email"] {
+		width: 63%;
+		float: left;
+		position: relative;
+		top: 12px;
+	}
+	
+	#top-jumpo .left-side .info-container .email-area button {
+		background: #6066F2;
+		padding: 20px 0;;
+		font-size: 1rem;
+		width: 22%;
+		float: left;
+	}
+	
+	#top-jumpo .right-side {
+		width: 100%;
+	}
+	
+	#top-jumpo .right-side img {
+		top: 0px;
+	}
+	
+}
